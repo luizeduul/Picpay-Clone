@@ -1,11 +1,10 @@
 {
   "expo": {
-    "name": "picpayClone",
+    "name": "PicPay",
     "slug": "picpayClone",
     "platforms": [
       "ios",
       "android",
-      "web"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
