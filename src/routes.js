@@ -5,6 +5,7 @@ import { AntDesign, Ionicons } from '@expo/vector-icons'
 import Home from './pages/Home';
 import Wallet from './pages/Wallet';
 import PayScreen from './pages/Pay';
+import Settings from './pages/Settings';
 
 import PayButton from './components/PayButton';
 
@@ -86,7 +87,7 @@ export default function Routes() {
       />
       <Tab.Screen
         name="Settings"
-        component={PayScreen}
+        component={Settings}
         options={{
           title: 'Ajustes',
         }}

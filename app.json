@@ -3,8 +3,7 @@
     "name": "PicPay",
     "slug": "picpayClone",
     "platforms": [
-      "ios",
-      "android",
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,8 +19,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "android": {
+      "package": "com.ferinhascorp.picpayclone",
+      "versionCode": 1
     }
   }
 }

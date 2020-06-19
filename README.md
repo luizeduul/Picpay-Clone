@@ -27,8 +27,8 @@
 ## Como utilizar 
 <p>Faça um clone desse projeto em sua máquina</p>
 <p>Primeiramente faça a instalação das dependencias do projeto</p>
-<p>Também faça a instalação do expo-cli em sua máquina <strong>npm install -g expo-cli</strong></p>
-<p>Faça a instalação das dependencias do projeto. Com <strong>yarn install</strong> ou <strong>npm install</strong>.</p>
+<p>Também faça a instalação do expo-cli em sua máquina com o comando: <strong>npm install -g expo-cli</strong></p>
+<p>Faça a instalação das dependencias do projeto. Com o comando: <strong>yarn install</strong> ou <strong>npm install</strong>.</p>
 <p>Para rodar seu app, você precisará baixar o app do Expo na Playstore ou Apple store.</p>
 <p>E executar o seguinte comando pra rodar o projeto: <strong>expo start</strong></p>
 <p>Se tudo der certo, irá abrir no navegador: a pagina do expo com um QR code. Abra o app do expo no seu smartphone e faça o scan do qr code. Feito isso o seu aplicativo irá carregar em seu dispositivo.</p>

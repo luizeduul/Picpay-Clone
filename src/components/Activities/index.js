@@ -24,6 +24,8 @@ import {
 } from './styles';
 
 import avatar from '../../images/avatar.png';
+import broncos from '../../images/broncos.png';
+
 
 export default function Activities() {
   return (
@@ -33,7 +35,7 @@ export default function Activities() {
       </Header>
       <Card>
         <CardHeader>
-          <Avatar source={avatar} />
+          <Avatar source={broncos} />
           <Description>
             <Bold>Você</Bold> pagou a <Bold>@renan.modzinski</Bold>
           </Description>
@@ -43,10 +45,10 @@ export default function Activities() {
         </CardBody>
         <CardFooter>
           <Details>
-            <Value>R$ 10,00</Value>
+            <Value>R$ 15,00</Value>
             <Divider />
             <Feather name="lock" color="#FFF" size={14} />
-            <Date>Há alguns minutos</Date>
+            <Date>2 dias atrás</Date>
           </Details>
           <Actions>
             <Options>

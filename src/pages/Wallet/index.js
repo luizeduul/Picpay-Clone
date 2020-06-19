@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Switch } from 'react-native';
-import { Feather, AntDesign, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Feather, FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 import {
   Bold,
   BalanceContainer,
@@ -19,20 +19,12 @@ import {
   UseBalanceTitle,
   PaymentMethods,
   PaymentMethodsTitle,
-  Card,
-  CardDetails,
-  CardInfo,
-  CardTitle,
-  Img,
-  CardBody,
-  AddButton,
-  AddLabel,
   CodeContainer,
   CodeButton,
   LabelCode,
 } from './styles';
 
-import creditCard from '../../images/credit-card.png';
+import PaymentCard from '../../components/PaymentCard';
 
 export default function Wallet() {
 
@@ -49,12 +41,12 @@ export default function Wallet() {
   return (
     <Wrapper>
       <Container>
-        <Header 
-            colors={
-              useBalance 
-              ? ['#52E78C', '#1AB563'] 
+        <Header
+          colors={
+            useBalance
+              ? ['#52E78C', '#1AB563']
               : ['#D3D3D3', '#868686']
-            }
+          }
         >
           <HeaderContainer>
             <Title>Saldo Picpay</Title>
@@ -83,7 +75,7 @@ export default function Wallet() {
           <UseBalanceTitle>
             Usar saldo ao pagar
         </UseBalanceTitle>
-          <Switch 
+          <Switch
             value={useBalance}
             onValueChange={handleToogleUseBalance}
           />
@@ -92,23 +84,7 @@ export default function Wallet() {
           <PaymentMethodsTitle>
             Formas de pagamento
         </PaymentMethodsTitle>
-          <Card>
-            <CardBody>
-              <CardDetails>
-                <CardTitle>
-                  Cadastre seu cartão de crédito
-                </CardTitle>
-                <CardInfo>
-                  Cadastre um cartão de crédito para poder fazer pagamentos mesmo quando não tiver saldo no seu Picpay
-                </CardInfo>
-              </CardDetails>
-              <Img source={creditCard} resizeMode="contain" />
-            </CardBody>
-            <AddButton>
-              <AntDesign name="pluscircleo" size={30} color="#0DB060" />
-              <AddLabel>Adicionar cartão de crédito</AddLabel>
-            </AddButton>
-          </Card>
+          <PaymentCard />
         </PaymentMethods>
         <CodeContainer>
           <CodeButton>
