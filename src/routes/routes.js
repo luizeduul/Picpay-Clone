@@ -2,12 +2,17 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign, Ionicons } from '@expo/vector-icons'
 
-import Home from './pages/Home';
-import Wallet from './pages/Wallet';
-import PayScreen from './pages/Pay';
-import Settings from './pages/Settings';
+import Home from '../pages/Home';
+import Wallet from '../pages/Wallet';
+import PayScreen from '../pages/Pay';
+import Settings from '../pages/Settings';
+import Notifications from '../pages/Notifications';
 
-import PayButton from './components/PayButton';
+import Main from '../components/MainPay';
+import Places from '../components/Places';
+import Store from '../components/Store';
+
+import PayButton from '../components/PayButton';
 
 const Tab = createBottomTabNavigator();
 
@@ -33,19 +38,19 @@ const icons = {
 export default function Routes() {
   return (
     <Tab.Navigator
-      initialRouteName='Home'
+      initialRouteName='Pay'
       screenOptions={({ route, navigation }) => ({
-        tabBarIcon: (({color, size, focused}) => {
-          if(route.name === 'Pay'){
+        tabBarIcon: (({ color, size, focused }) => {
+          if (route.name === 'Pay') {
             return (
-              <PayButton  
+              <PayButton
                 onPress={() => navigation.navigate('Pay')}
                 focused={focused}
               />
             );
           }
-          const {lib: Icon, name} = icons[route.name];
-          return <Icon name={name} size={size} color={color}/>
+          const { lib: Icon, name } = icons[route.name];
+          return <Icon name={name} size={size} color={color} />
         }),
       })}
       tabBarOptions={{
@@ -53,7 +58,7 @@ export default function Routes() {
           backgroundColor: '#131418',
           borderTopColor: 'rgba(255, 255, 255, 0.2)',
         },
-        activeTintColor:'#FFF',
+        activeTintColor: '#FFF',
         inactiveTintColor: '#92929C'
       }}
     >
@@ -80,7 +85,7 @@ export default function Routes() {
       />
       <Tab.Screen
         name="Notifications"
-        component={PayScreen}
+        component={Notifications}
         options={{
           title: 'Notificações',
         }}

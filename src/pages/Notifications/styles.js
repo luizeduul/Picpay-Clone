@@ -15,18 +15,20 @@ export const Header = styled.View`
   justify-content: space-between;
 `;
 
-export const BalanceContainer = styled.View``;
-
-export const BalanceTitle = styled.Text`
-  color: rgba(255,255,255, 0.8);
-  font-size: 14px;
-  text-align: center;
-`;
-
-export const Balance = styled.Text`
+export const Title = styled.Text`
   color: #FFF;
+  font-size: 18px;
   font-weight: bold;
-  font-size: 20px;
-  
 `;
+
+export const ButtonConfig = styled.TouchableOpacity``;
+
+export const LabelButton = styled.Text`
+  color:#10C86E;
+`;
+
+
+
+
+
 

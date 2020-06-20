@@ -1,16 +1,15 @@
 import styled from 'styled-components/native';
 
 export const SectionContainer = styled.View`
-  margin-top: 20px;
+  margin-top: 8px;
 `;
 
 export const SectionTitle = styled.Text`
   padding: 0 16px;
+  margin-top: 8px;
   color: #93BF9E;
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 10px;
-  margin-top: 5px;
 `;
 
 export const SectionList = styled.View``;
@@ -18,17 +17,20 @@ export const SectionList = styled.View``;
 export const ListItems = styled.TouchableOpacity`
   padding: 0 16px;
   background: #1E222B;
-  height: 60px;
+  padding-bottom: 10px;
   border-bottom-width: 0.5px;
-  border-color: rgba(255,255,255, 0.06);
-
+  border-color: rgba(255,255,255, 0.08);
 `;
 
-export const ItemTitle = styled.Text`
-  padding-top: 20px;
+export const Description = styled.Text`
+  padding-top: 10px;
+  padding-top: 10px;
+  font-size: 15px;
   color: #FFF;
 `;
 
-export const LabelValue = styled.Text`
-  color: rgba(255, 255, 255, 0.8);
+export const LabelDate = styled.Text`
+  margin-top: 8px;
+  font-size: 12px;
+  color: #DCDCDC;
 `;

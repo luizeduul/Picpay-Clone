@@ -12,3 +12,7 @@ web-report/
 
 # macOS
 .DS_Store
+
+src/routes/routePayPage.js
+
+.gitignore
